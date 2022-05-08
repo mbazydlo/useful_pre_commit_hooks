@@ -1,6 +1,6 @@
--   id: check-parameters-typing
-    name: check for existing of parameters typing
-    description: prevents python files be commited if there is no typing in new functions/methods.
-    entry: check-parameters-typing
+-   id: check-requirements-versions
+    name: warning about requirements.txt
+    description: makes sure all requirements have versions provided.
+    entry: check-requirements-versions
     language: python
-    types: [python]
+    files: requirements.*\.txt$
