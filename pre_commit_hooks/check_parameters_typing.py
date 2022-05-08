@@ -11,7 +11,8 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument('filenames', nargs='*', help='Filenames to check.')
     args = parser.parse_args(argv)
 
-    retval = 0
+    retval = 1
+
     for filename in args.filenames:
         print(filename)
     return retval

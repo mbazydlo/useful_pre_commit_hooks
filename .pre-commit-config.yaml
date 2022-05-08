@@ -5,3 +5,7 @@ repos:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
     -   id: check-yaml
+-   repo: /home/marcin/PycharmProjects/useful_pre_commit_hooks
+    rev: 1.0.1
+    hooks:
+        - id: check-parameters-typing
