@@ -17,7 +17,7 @@ def main() -> int:
         with open(filename, mode='r') as file:
             for requirement in file.readlines():
                 if not PATTERN.search(requirement):
-                    print(f'Requirement library does not contain version info: {requirement}')
+                    print(f'Requirement library does not contain version info: {requirement}', end='')
                     return_value = 1
     return return_value
 

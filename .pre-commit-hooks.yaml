@@ -1,5 +1,5 @@
 -   id: check-requirements-versions
-    name: warning about requirements.txt
+    name: checks requirements versions
     description: makes sure all requirements have versions provided.
     entry: check-requirements-versions
     language: python
