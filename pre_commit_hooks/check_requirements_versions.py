@@ -17,9 +17,9 @@ def main() -> int:
         with open(filename, mode='r') as file:
             for requirement in file.readlines():
                 if not PATTERN.search(requirement) \
-                        and not requirement.startswith('#') \
+                        and not requirement.startswith(('#', '--')) \
                         and requirement.strip():
-                    print(f'Requirement in file {filename!r} does not contain version info: {requirement}', end='')
+                    print(f'Requirement in file {filename!r} does not contain version info: {requirement!r}', end='')
                     return_value = 1
     return return_value
 
