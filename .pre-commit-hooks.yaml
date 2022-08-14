@@ -4,3 +4,9 @@
     entry: check-requirements-versions
     language: python
     files: requirements.*\.txt$
+-   id: check-exec-eval
+    name: checks exec eval
+    description: makes sure functions exec and eval are not used in any .py file
+    entry: check-exec-eval
+    language: python
+    types: [python]
